@@ -1,0 +1,17 @@
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Carthage
+  - Pods
+  - fastlane
+disabled_rules:
+  - line_length
+  - trailing_comma
+  - nesting
+type_name:
+  excluded:
+    - ID
+variable_name:
+  excluded:
+    - id
+    - i
+    - v
+    - ns

@@ -1,0 +1,7 @@
+--stripunusedargs closure-only
+--disable emptyBraces
+--self init-only
+--exclude **/Generated/*
+
+# ifdef indent breaks live preview in XCode 11
+--ifdef no-indent
