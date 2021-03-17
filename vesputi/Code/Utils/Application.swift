@@ -8,6 +8,14 @@
 import UIKit
 
 class Application {
-    func setup(windowScene: UIWindowScene?) {
+    private let api = API(baseURL: Configuration.APIBaseURL)
+    private let sceneFactory: SceneFactory
+
+    init() {
+        self.sceneFactory = SceneFactory(api: api)
+    }
+
+    func getInitialContoller() -> UIViewController {
+        sceneFactory.mapScene()
     }
 }

@@ -26,6 +26,10 @@
 		39A1AEAF2602326200B5B3BB /* MapSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEAA2602326200B5B3BB /* MapSceneView.swift */; };
 		39A1AEB82602329600B5B3BB /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEB72602329600B5B3BB /* SceneFactory.swift */; };
 		39A1AEBE2602332400B5B3BB /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEBD2602332400B5B3BB /* Application.swift */; };
+		39A1AEC526023A7700B5B3BB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEC426023A7700B5B3BB /* API.swift */; };
+		39A1AECC26023AD900B5B3BB /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AECB26023AD900B5B3BB /* RequestFactory.swift */; };
+		39A1AED5260280FC00B5B3BB /* MapPOI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AED4260280FC00B5B3BB /* MapPOI.swift */; };
+		39A1AEDB260284B800B5B3BB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEDA260284B800B5B3BB /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		39A1AEAA2602326200B5B3BB /* MapSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSceneView.swift; sourceTree = "<group>"; };
 		39A1AEB72602329600B5B3BB /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		39A1AEBD2602332400B5B3BB /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		39A1AEC426023A7700B5B3BB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		39A1AECB26023AD900B5B3BB /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		39A1AED4260280FC00B5B3BB /* MapPOI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPOI.swift; sourceTree = "<group>"; };
+		39A1AEDA260284B800B5B3BB /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,7 @@
 		39A1AE7A2601F32100B5B3BB /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				39A1AEC32602367A00B5B3BB /* API */,
 				39A1AEA42602311F00B5B3BB /* Scenes */,
 				39A1AE982602302A00B5B3BB /* Utils */,
 				39A1AE492601F2C400B5B3BB /* SceneDelegate.swift */,
@@ -188,6 +197,7 @@
 			children = (
 				39A1AE992602304D00B5B3BB /* VIP */,
 				39A1AEBD2602332400B5B3BB /* Application.swift */,
+				39A1AEDA260284B800B5B3BB /* Configuration.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -228,6 +238,32 @@
 				39A1AEAA2602326200B5B3BB /* MapSceneView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		39A1AEC32602367A00B5B3BB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AED32602806F00B5B3BB /* Models */,
+				39A1AECA26023AAB00B5B3BB /* Utils */,
+				39A1AEC426023A7700B5B3BB /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		39A1AECA26023AAB00B5B3BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AECB26023AD900B5B3BB /* RequestFactory.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		39A1AED32602806F00B5B3BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AED4260280FC00B5B3BB /* MapPOI.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,11 +401,15 @@
 				39A1AEB82602329600B5B3BB /* SceneFactory.swift in Sources */,
 				39A1AEAD2602326200B5B3BB /* MapSceneInteractor.swift in Sources */,
 				39A1AEAE2602326200B5B3BB /* MapSceneViewController.swift in Sources */,
+				39A1AED5260280FC00B5B3BB /* MapPOI.swift in Sources */,
+				39A1AEDB260284B800B5B3BB /* Configuration.swift in Sources */,
 				39A1AEAF2602326200B5B3BB /* MapSceneView.swift in Sources */,
+				39A1AECC26023AD900B5B3BB /* RequestFactory.swift in Sources */,
 				39A1AE482601F2C400B5B3BB /* AppDelegate.swift in Sources */,
 				39A1AE9B260230C000B5B3BB /* VIPBase.swift in Sources */,
 				39A1AE4A2601F2C400B5B3BB /* SceneDelegate.swift in Sources */,
 				39A1AEAC2602326200B5B3BB /* MapSceneRouter.swift in Sources */,
+				39A1AEC526023A7700B5B3BB /* API.swift in Sources */,
 				39A1AEA1260230D200B5B3BB /* VIPAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
