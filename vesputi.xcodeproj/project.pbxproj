@@ -14,6 +14,10 @@
 		39A1AE542601F2C600B5B3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A1AE522601F2C600B5B3BB /* LaunchScreen.storyboard */; };
 		39A1AE5F2601F2C600B5B3BB /* vesputiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE5E2601F2C600B5B3BB /* vesputiTests.swift */; };
 		39A1AE6A2601F2C600B5B3BB /* vesputiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE692601F2C600B5B3BB /* vesputiUITests.swift */; };
+		39A1AE8C260229A800B5B3BB /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A1AE8B260229A800B5B3BB /* Mapbox.framework */; };
+		39A1AE8D260229A900B5B3BB /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39A1AE8B260229A800B5B3BB /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39A1AE92260229AD00B5B3BB /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A1AE91260229AD00B5B3BB /* MapboxMobileEvents.framework */; };
+		39A1AE93260229AD00B5B3BB /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39A1AE91260229AD00B5B3BB /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		39A1AE8E260229A900B5B3BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				39A1AE93260229AD00B5B3BB /* MapboxMobileEvents.framework in Embed Frameworks */,
+				39A1AE8D260229A900B5B3BB /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		39A1AE442601F2C400B5B3BB /* vesputi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vesputi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A1AE472601F2C400B5B3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,8 @@
 		39A1AE652601F2C600B5B3BB /* vesputiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vesputiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A1AE692601F2C600B5B3BB /* vesputiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vesputiUITests.swift; sourceTree = "<group>"; };
 		39A1AE6B2601F2C600B5B3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A1AE8B260229A800B5B3BB /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		39A1AE91260229AD00B5B3BB /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = Carthage/Build/iOS/MapboxMobileEvents.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A1AE92260229AD00B5B3BB /* MapboxMobileEvents.framework in Frameworks */,
+				39A1AE8C260229A800B5B3BB /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,7 @@
 				39A1AE5D2601F2C600B5B3BB /* vesputiTests */,
 				39A1AE682601F2C600B5B3BB /* vesputiUITests */,
 				39A1AE452601F2C400B5B3BB /* Products */,
+				39A1AE8A260229A800B5B3BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +157,15 @@
 			path = Code;
 			sourceTree = "<group>";
 		};
+		39A1AE8A260229A800B5B3BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AE91260229AD00B5B3BB /* MapboxMobileEvents.framework */,
+				39A1AE8B260229A800B5B3BB /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +176,7 @@
 				39A1AE402601F2C400B5B3BB /* Sources */,
 				39A1AE412601F2C400B5B3BB /* Frameworks */,
 				39A1AE422601F2C400B5B3BB /* Resources */,
+				39A1AE8E260229A900B5B3BB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,6 +467,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = vesputi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +481,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -452,6 +491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = vesputi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +505,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
