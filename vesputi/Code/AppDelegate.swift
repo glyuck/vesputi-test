@@ -9,10 +9,11 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let window = UIWindow()
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    let sceneFactory = SceneFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window.rootViewController = ViewController()
+        window.rootViewController = sceneFactory.mapScene()
         window.makeKeyAndVisible()
 
         return true
