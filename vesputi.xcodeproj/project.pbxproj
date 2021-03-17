@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39A1AE482601F2C400B5B3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE472601F2C400B5B3BB /* AppDelegate.swift */; };
+		39A1AE4A2601F2C400B5B3BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE492601F2C400B5B3BB /* SceneDelegate.swift */; };
+		39A1AE4C2601F2C400B5B3BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE4B2601F2C400B5B3BB /* ViewController.swift */; };
+		39A1AE512601F2C600B5B3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A1AE502601F2C600B5B3BB /* Assets.xcassets */; };
+		39A1AE542601F2C600B5B3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A1AE522601F2C600B5B3BB /* LaunchScreen.storyboard */; };
+		39A1AE5F2601F2C600B5B3BB /* vesputiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE5E2601F2C600B5B3BB /* vesputiTests.swift */; };
+		39A1AE6A2601F2C600B5B3BB /* vesputiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AE692601F2C600B5B3BB /* vesputiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39A1AE5B2601F2C600B5B3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A1AE3C2601F2C400B5B3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39A1AE432601F2C400B5B3BB;
+			remoteInfo = vesputi;
+		};
+		39A1AE662601F2C600B5B3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A1AE3C2601F2C400B5B3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39A1AE432601F2C400B5B3BB;
+			remoteInfo = vesputi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39A1AE442601F2C400B5B3BB /* vesputi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vesputi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A1AE472601F2C400B5B3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39A1AE492601F2C400B5B3BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39A1AE4B2601F2C400B5B3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39A1AE502601F2C600B5B3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39A1AE532601F2C600B5B3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39A1AE552601F2C600B5B3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A1AE5A2601F2C600B5B3BB /* vesputiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vesputiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A1AE5E2601F2C600B5B3BB /* vesputiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vesputiTests.swift; sourceTree = "<group>"; };
+		39A1AE602601F2C600B5B3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A1AE652601F2C600B5B3BB /* vesputiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vesputiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A1AE692601F2C600B5B3BB /* vesputiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vesputiUITests.swift; sourceTree = "<group>"; };
+		39A1AE6B2601F2C600B5B3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39A1AE412601F2C400B5B3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A1AE572601F2C600B5B3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A1AE622601F2C600B5B3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39A1AE3B2601F2C400B5B3BB = {
+			isa = PBXGroup;
+			children = (
+				39A1AE462601F2C400B5B3BB /* vesputi */,
+				39A1AE5D2601F2C600B5B3BB /* vesputiTests */,
+				39A1AE682601F2C600B5B3BB /* vesputiUITests */,
+				39A1AE452601F2C400B5B3BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39A1AE452601F2C400B5B3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AE442601F2C400B5B3BB /* vesputi.app */,
+				39A1AE5A2601F2C600B5B3BB /* vesputiTests.xctest */,
+				39A1AE652601F2C600B5B3BB /* vesputiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39A1AE462601F2C400B5B3BB /* vesputi */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AE7A2601F32100B5B3BB /* Code */,
+				39A1AE502601F2C600B5B3BB /* Assets.xcassets */,
+				39A1AE522601F2C600B5B3BB /* LaunchScreen.storyboard */,
+				39A1AE552601F2C600B5B3BB /* Info.plist */,
+			);
+			path = vesputi;
+			sourceTree = "<group>";
+		};
+		39A1AE5D2601F2C600B5B3BB /* vesputiTests */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AE5E2601F2C600B5B3BB /* vesputiTests.swift */,
+				39A1AE602601F2C600B5B3BB /* Info.plist */,
+			);
+			path = vesputiTests;
+			sourceTree = "<group>";
+		};
+		39A1AE682601F2C600B5B3BB /* vesputiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AE692601F2C600B5B3BB /* vesputiUITests.swift */,
+				39A1AE6B2601F2C600B5B3BB /* Info.plist */,
+			);
+			path = vesputiUITests;
+			sourceTree = "<group>";
+		};
+		39A1AE7A2601F32100B5B3BB /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AE492601F2C400B5B3BB /* SceneDelegate.swift */,
+				39A1AE4B2601F2C400B5B3BB /* ViewController.swift */,
+				39A1AE472601F2C400B5B3BB /* AppDelegate.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39A1AE432601F2C400B5B3BB /* vesputi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A1AE6E2601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputi" */;
+			buildPhases = (
+				39A1AE402601F2C400B5B3BB /* Sources */,
+				39A1AE412601F2C400B5B3BB /* Frameworks */,
+				39A1AE422601F2C400B5B3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vesputi;
+			productName = vesputi;
+			productReference = 39A1AE442601F2C400B5B3BB /* vesputi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39A1AE592601F2C600B5B3BB /* vesputiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A1AE712601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputiTests" */;
+			buildPhases = (
+				39A1AE562601F2C600B5B3BB /* Sources */,
+				39A1AE572601F2C600B5B3BB /* Frameworks */,
+				39A1AE582601F2C600B5B3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39A1AE5C2601F2C600B5B3BB /* PBXTargetDependency */,
+			);
+			name = vesputiTests;
+			productName = vesputiTests;
+			productReference = 39A1AE5A2601F2C600B5B3BB /* vesputiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39A1AE642601F2C600B5B3BB /* vesputiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A1AE742601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputiUITests" */;
+			buildPhases = (
+				39A1AE612601F2C600B5B3BB /* Sources */,
+				39A1AE622601F2C600B5B3BB /* Frameworks */,
+				39A1AE632601F2C600B5B3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39A1AE672601F2C600B5B3BB /* PBXTargetDependency */,
+			);
+			name = vesputiUITests;
+			productName = vesputiUITests;
+			productReference = 39A1AE652601F2C600B5B3BB /* vesputiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39A1AE3C2601F2C400B5B3BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					39A1AE432601F2C400B5B3BB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					39A1AE592601F2C600B5B3BB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 39A1AE432601F2C400B5B3BB;
+					};
+					39A1AE642601F2C600B5B3BB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 39A1AE432601F2C400B5B3BB;
+					};
+				};
+			};
+			buildConfigurationList = 39A1AE3F2601F2C400B5B3BB /* Build configuration list for PBXProject "vesputi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39A1AE3B2601F2C400B5B3BB;
+			productRefGroup = 39A1AE452601F2C400B5B3BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39A1AE432601F2C400B5B3BB /* vesputi */,
+				39A1AE592601F2C600B5B3BB /* vesputiTests */,
+				39A1AE642601F2C600B5B3BB /* vesputiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39A1AE422601F2C400B5B3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A1AE542601F2C600B5B3BB /* LaunchScreen.storyboard in Resources */,
+				39A1AE512601F2C600B5B3BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A1AE582601F2C600B5B3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A1AE632601F2C600B5B3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39A1AE402601F2C400B5B3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A1AE4C2601F2C400B5B3BB /* ViewController.swift in Sources */,
+				39A1AE482601F2C400B5B3BB /* AppDelegate.swift in Sources */,
+				39A1AE4A2601F2C400B5B3BB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A1AE562601F2C600B5B3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A1AE5F2601F2C600B5B3BB /* vesputiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A1AE612601F2C600B5B3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A1AE6A2601F2C600B5B3BB /* vesputiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39A1AE5C2601F2C600B5B3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39A1AE432601F2C400B5B3BB /* vesputi */;
+			targetProxy = 39A1AE5B2601F2C600B5B3BB /* PBXContainerItemProxy */;
+		};
+		39A1AE672601F2C600B5B3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39A1AE432601F2C400B5B3BB /* vesputi */;
+			targetProxy = 39A1AE662601F2C600B5B3BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39A1AE522601F2C600B5B3BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39A1AE532601F2C600B5B3BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39A1AE6C2601F2C600B5B3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39A1AE6D2601F2C600B5B3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39A1AE6F2601F2C600B5B3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vesputi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vesputi.vesputi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A1AE702601F2C600B5B3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vesputi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vesputi.vesputi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39A1AE722601F2C600B5B3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vesputiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vesputi.vesputiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vesputi.app/vesputi";
+			};
+			name = Debug;
+		};
+		39A1AE732601F2C600B5B3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vesputiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vesputi.vesputiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vesputi.app/vesputi";
+			};
+			name = Release;
+		};
+		39A1AE752601F2C600B5B3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vesputiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vesputi.vesputiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vesputi;
+			};
+			name = Debug;
+		};
+		39A1AE762601F2C600B5B3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vesputiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vesputi.vesputiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vesputi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39A1AE3F2601F2C400B5B3BB /* Build configuration list for PBXProject "vesputi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A1AE6C2601F2C600B5B3BB /* Debug */,
+				39A1AE6D2601F2C600B5B3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A1AE6E2601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A1AE6F2601F2C600B5B3BB /* Debug */,
+				39A1AE702601F2C600B5B3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A1AE712601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A1AE722601F2C600B5B3BB /* Debug */,
+				39A1AE732601F2C600B5B3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A1AE742601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A1AE752601F2C600B5B3BB /* Debug */,
+				39A1AE762601F2C600B5B3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39A1AE3C2601F2C400B5B3BB /* Project object */;
+}
