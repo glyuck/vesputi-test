@@ -30,6 +30,11 @@
 		39A1AECC26023AD900B5B3BB /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AECB26023AD900B5B3BB /* RequestFactory.swift */; };
 		39A1AED5260280FC00B5B3BB /* MapPOI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AED4260280FC00B5B3BB /* MapPOI.swift */; };
 		39A1AEDB260284B800B5B3BB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEDA260284B800B5B3BB /* Configuration.swift */; };
+		39A1AEE4260326AB00B5B3BB /* POIDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEDF260326AB00B5B3BB /* POIDetailsScenePresenter.swift */; };
+		39A1AEE5260326AB00B5B3BB /* POIDetailsSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE0260326AB00B5B3BB /* POIDetailsSceneRouter.swift */; };
+		39A1AEE6260326AB00B5B3BB /* POIDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE1260326AB00B5B3BB /* POIDetailsSceneInteractor.swift */; };
+		39A1AEE7260326AB00B5B3BB /* POIDetailsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE2260326AB00B5B3BB /* POIDetailsSceneViewController.swift */; };
+		39A1AEE8260326AB00B5B3BB /* POIDetailsSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +97,11 @@
 		39A1AECB26023AD900B5B3BB /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		39A1AED4260280FC00B5B3BB /* MapPOI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPOI.swift; sourceTree = "<group>"; };
 		39A1AEDA260284B800B5B3BB /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		39A1AEDF260326AB00B5B3BB /* POIDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsScenePresenter.swift; sourceTree = "<group>"; };
+		39A1AEE0260326AB00B5B3BB /* POIDetailsSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneRouter.swift; sourceTree = "<group>"; };
+		39A1AEE1260326AB00B5B3BB /* POIDetailsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneInteractor.swift; sourceTree = "<group>"; };
+		39A1AEE2260326AB00B5B3BB /* POIDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneViewController.swift; sourceTree = "<group>"; };
+		39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +224,7 @@
 		39A1AEA42602311F00B5B3BB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				39A1AEDE2603268F00B5B3BB /* POIDetailsScene */,
 				39A1AEA52602312C00B5B3BB /* MapScene */,
 				39A1AEB72602329600B5B3BB /* SceneFactory.swift */,
 			);
@@ -224,9 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				39A1AEB42602326500B5B3BB /* Utils */,
+				39A1AEA82602326200B5B3BB /* MapSceneInteractor.swift */,
 				39A1AEA62602326200B5B3BB /* MapScenePresenter.swift */,
 				39A1AEA72602326200B5B3BB /* MapSceneRouter.swift */,
-				39A1AEA82602326200B5B3BB /* MapSceneInteractor.swift */,
 				39A1AEA92602326200B5B3BB /* MapSceneViewController.swift */,
 			);
 			path = MapScene;
@@ -264,6 +275,26 @@
 				39A1AED4260280FC00B5B3BB /* MapPOI.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		39A1AEDE2603268F00B5B3BB /* POIDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AEEF260326BE00B5B3BB /* Utils */,
+				39A1AEE1260326AB00B5B3BB /* POIDetailsSceneInteractor.swift */,
+				39A1AEDF260326AB00B5B3BB /* POIDetailsScenePresenter.swift */,
+				39A1AEE0260326AB00B5B3BB /* POIDetailsSceneRouter.swift */,
+				39A1AEE2260326AB00B5B3BB /* POIDetailsSceneViewController.swift */,
+			);
+			path = POIDetailsScene;
+			sourceTree = "<group>";
+		};
+		39A1AEEF260326BE00B5B3BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,16 +430,21 @@
 				39A1AEBE2602332400B5B3BB /* Application.swift in Sources */,
 				39A1AEAB2602326200B5B3BB /* MapScenePresenter.swift in Sources */,
 				39A1AEB82602329600B5B3BB /* SceneFactory.swift in Sources */,
+				39A1AEE7260326AB00B5B3BB /* POIDetailsSceneViewController.swift in Sources */,
 				39A1AEAD2602326200B5B3BB /* MapSceneInteractor.swift in Sources */,
 				39A1AEAE2602326200B5B3BB /* MapSceneViewController.swift in Sources */,
 				39A1AED5260280FC00B5B3BB /* MapPOI.swift in Sources */,
+				39A1AEE8260326AB00B5B3BB /* POIDetailsSceneView.swift in Sources */,
 				39A1AEDB260284B800B5B3BB /* Configuration.swift in Sources */,
 				39A1AEAF2602326200B5B3BB /* MapSceneView.swift in Sources */,
 				39A1AECC26023AD900B5B3BB /* RequestFactory.swift in Sources */,
+				39A1AEE6260326AB00B5B3BB /* POIDetailsSceneInteractor.swift in Sources */,
 				39A1AE482601F2C400B5B3BB /* AppDelegate.swift in Sources */,
 				39A1AE9B260230C000B5B3BB /* VIPBase.swift in Sources */,
+				39A1AEE5260326AB00B5B3BB /* POIDetailsSceneRouter.swift in Sources */,
 				39A1AE4A2601F2C400B5B3BB /* SceneDelegate.swift in Sources */,
 				39A1AEAC2602326200B5B3BB /* MapSceneRouter.swift in Sources */,
+				39A1AEE4260326AB00B5B3BB /* POIDetailsScenePresenter.swift in Sources */,
 				39A1AEC526023A7700B5B3BB /* API.swift in Sources */,
 				39A1AEA1260230D200B5B3BB /* VIPAssembly.swift in Sources */,
 			);
