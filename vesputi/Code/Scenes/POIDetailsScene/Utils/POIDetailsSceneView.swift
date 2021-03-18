@@ -8,7 +8,10 @@
 import UIKit
 
 class POIDetailsSceneView: UIView {
-    let scrollView = UIScrollView()
+    let scrollView: UIScrollView = {
+        $0.isScrollEnabled = false
+        return $0
+    }(UIScrollView())
 
     let vStackView: UIStackView = {
         $0.axis = .vertical

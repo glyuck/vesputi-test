@@ -15,6 +15,7 @@ protocol MapSceneViewControllerProtocol: AnyObject {
 
 class MapSceneViewController: VIPViewController<MapSceneInteractorProtocol> {
     private var annotations: [MGLAnnotation]?
+    private var poiDetailsPopoverInteraction: POIDetailsPopoverInteraction!
 
     let v = MapSceneView()
 
@@ -23,6 +24,7 @@ class MapSceneViewController: VIPViewController<MapSceneInteractorProtocol> {
     }
 
     override func viewDidLoad() {
+        poiDetailsPopoverInteraction = POIDetailsPopoverInteraction(controller: self, container: v.poiDetailsContainer)
         v.mapView.delegate = self
 
         super.viewDidLoad()
@@ -46,13 +48,6 @@ extension MapSceneViewController: MGLMapViewDelegate {
     }
 
     func display(poiDetailsScene: UIViewController) {
-        embedViewController(poiDetailsScene, container: v.poiDetailsContainer)
-        UIView.transition(
-            with: v.poiDetailsContainer,
-            duration: Constants.UI.animatinoDuration,
-            options: [.curveEaseInOut, .beginFromCurrentState, .transitionCrossDissolve],
-            animations: nil,
-            completion: nil
-        )
+        poiDetailsPopoverInteraction.show(scene: poiDetailsScene)
     }
 }

@@ -40,6 +40,7 @@
 		39A1AEFC260336BB00B5B3BB /* UILabel+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEFB260336BB00B5B3BB /* UILabel+HTML.swift */; };
 		39A1AF0426035EC200B5B3BB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AF0326035EC200B5B3BB /* UIViewController+Extensions.swift */; };
 		39A1AF0926035F1800B5B3BB /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AF0826035F1800B5B3BB /* UIView+Layout.swift */; };
+		39A1AF172603871D00B5B3BB /* POIDetailsPopoverInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AF162603871D00B5B3BB /* POIDetailsPopoverInteraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		39A1AEFB260336BB00B5B3BB /* UILabel+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+HTML.swift"; sourceTree = "<group>"; };
 		39A1AF0326035EC200B5B3BB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		39A1AF0826035F1800B5B3BB /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		39A1AF162603871D00B5B3BB /* POIDetailsPopoverInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsPopoverInteraction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				39A1AEAA2602326200B5B3BB /* MapSceneView.swift */,
+				39A1AF162603871D00B5B3BB /* POIDetailsPopoverInteraction.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				39A1AEF426032DBD00B5B3BB /* Collection+Extensions.swift in Sources */,
 				39A1AF0426035EC200B5B3BB /* UIViewController+Extensions.swift in Sources */,
 				39A1AEB82602329600B5B3BB /* SceneFactory.swift in Sources */,
+				39A1AF172603871D00B5B3BB /* POIDetailsPopoverInteraction.swift in Sources */,
 				39A1AEE7260326AB00B5B3BB /* POIDetailsSceneViewController.swift in Sources */,
 				39A1AEAD2602326200B5B3BB /* MapSceneInteractor.swift in Sources */,
 				39A1AEAE2602326200B5B3BB /* MapSceneViewController.swift in Sources */,
