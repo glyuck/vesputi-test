@@ -8,9 +8,16 @@
 import UIKit
 
 protocol POIDetailsSceneViewControllerProtocol: AnyObject {
+    func display(viewModel: POIDetailsSceneViewController.ViewModel)
 }
 
 class POIDetailsSceneViewController: VIPViewController<POIDetailsSceneInteractorProtocol> {
+    struct ViewModel {
+        let title: String
+        let subtitle: String?
+        let description: String?
+    }
+
     let v = POIDetailsSceneView()
 
     override func loadView() {
@@ -23,4 +30,13 @@ class POIDetailsSceneViewController: VIPViewController<POIDetailsSceneInteractor
 }
 
 extension POIDetailsSceneViewController: POIDetailsSceneViewControllerProtocol {
+    func display(viewModel: ViewModel) {
+        v.titleLabel.text = viewModel.title
+        v.subtitleLabel.text = viewModel.subtitle
+        v.descriptionLabel.text = viewModel.description
+
+        v.titleLabel.isHidden = v.titleLabel.text?.isEmpty != false
+        v.subtitleLabel.isHidden = v.subtitleLabel.text?.isEmpty != false
+        v.descriptionLabel.isHidden = v.descriptionLabel.text?.isEmpty != false
+    }
 }

@@ -13,6 +13,8 @@ protocol MapSceneViewControllerProtocol: AnyObject {
 }
 
 class MapSceneViewController: VIPViewController<MapSceneInteractorProtocol> {
+    private var annotations: [MGLAnnotation]?
+
     let v = MapSceneView()
 
     override func loadView() {
@@ -20,12 +22,25 @@ class MapSceneViewController: VIPViewController<MapSceneInteractorProtocol> {
     }
 
     override func viewDidLoad() {
+        v.mapView.delegate = self
+
         super.viewDidLoad()
     }
 }
 
 extension MapSceneViewController: MapSceneViewControllerProtocol {
     func display(annotations: [MGLAnnotation]) {
+        self.annotations = annotations
+
         v.mapView.addAnnotations(annotations)
+    }
+}
+
+extension MapSceneViewController: MGLMapViewDelegate {
+    func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
+        guard let index = annotations?.firstIndex(where: { $0 === annotation }) else {
+            return
+        }
+        interactor.actionSelectPOI(index: index)
     }
 }

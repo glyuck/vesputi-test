@@ -35,6 +35,8 @@
 		39A1AEE6260326AB00B5B3BB /* POIDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE1260326AB00B5B3BB /* POIDetailsSceneInteractor.swift */; };
 		39A1AEE7260326AB00B5B3BB /* POIDetailsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE2260326AB00B5B3BB /* POIDetailsSceneViewController.swift */; };
 		39A1AEE8260326AB00B5B3BB /* POIDetailsSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */; };
+		39A1AEF426032DBD00B5B3BB /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEF326032DBD00B5B3BB /* Collection+Extensions.swift */; };
+		39A1AEF82603358200B5B3BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEF72603358200B5B3BB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		39A1AEE1260326AB00B5B3BB /* POIDetailsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneInteractor.swift; sourceTree = "<group>"; };
 		39A1AEE2260326AB00B5B3BB /* POIDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneViewController.swift; sourceTree = "<group>"; };
 		39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneView.swift; sourceTree = "<group>"; };
+		39A1AEF326032DBD00B5B3BB /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		39A1AEF72603358200B5B3BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				39A1AEC32602367A00B5B3BB /* API */,
+				39A1AEF226032D9A00B5B3BB /* Extensions */,
 				39A1AEA42602311F00B5B3BB /* Scenes */,
 				39A1AE982602302A00B5B3BB /* Utils */,
 				39A1AE492601F2C400B5B3BB /* SceneDelegate.swift */,
@@ -208,6 +213,7 @@
 				39A1AE992602304D00B5B3BB /* VIP */,
 				39A1AEBD2602332400B5B3BB /* Application.swift */,
 				39A1AEDA260284B800B5B3BB /* Configuration.swift */,
+				39A1AEF72603358200B5B3BB /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -295,6 +301,14 @@
 				39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		39A1AEF226032D9A00B5B3BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				39A1AEF326032DBD00B5B3BB /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,7 +442,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				39A1AEBE2602332400B5B3BB /* Application.swift in Sources */,
+				39A1AEF82603358200B5B3BB /* Constants.swift in Sources */,
 				39A1AEAB2602326200B5B3BB /* MapScenePresenter.swift in Sources */,
+				39A1AEF426032DBD00B5B3BB /* Collection+Extensions.swift in Sources */,
 				39A1AEB82602329600B5B3BB /* SceneFactory.swift in Sources */,
 				39A1AEE7260326AB00B5B3BB /* POIDetailsSceneViewController.swift in Sources */,
 				39A1AEAD2602326200B5B3BB /* MapSceneInteractor.swift in Sources */,

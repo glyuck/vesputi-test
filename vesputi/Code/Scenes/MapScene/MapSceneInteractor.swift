@@ -8,6 +8,7 @@
 import Foundation
 
 protocol MapSceneInteractorProtocol: InteractorProtocol {
+    func actionSelectPOI(index: Int)
 }
 
 class MapSceneInteractor: Interactor<MapScenePresenterProtocol, MapSceneRouterProtocol> {
@@ -39,4 +40,10 @@ private extension MapSceneInteractor {
 }
 
 extension MapSceneInteractor: MapSceneInteractorProtocol {
+    func actionSelectPOI(index: Int) {
+        guard let poi = pois?[safe: index] else {
+            return
+        }
+        router.openPOIDetailsScene(poi: poi)
+    }
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 protocol POIDetailsScenePresenterProtocol {
+    func present(poi: MapPOI)
 }
 
 class POIDetailsScenePresenter: AssemblablePresenterProtocol {
@@ -15,4 +16,13 @@ class POIDetailsScenePresenter: AssemblablePresenterProtocol {
 }
 
 extension POIDetailsScenePresenter: POIDetailsScenePresenterProtocol {
+    func present(poi: MapPOI) {
+        viewController.display(
+            viewModel: .init(
+                title: poi.title,
+                subtitle: poi.subtitle,
+                description: poi.description
+            )
+        )
+    }
 }

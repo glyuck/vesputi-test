@@ -22,4 +22,13 @@ class SceneFactory {
             router: MapSceneRouter(sceneFactory: self)
         )
     }
+
+    func poiDetailsScene(poi: MapPOI) -> UIViewController {
+        assembleVIP(
+            viewController: POIDetailsSceneViewController(),
+            interactor: POIDetailsSceneInteractor(poi: poi),
+            presenter: POIDetailsScenePresenter(),
+            router: POIDetailsSceneRouter(sceneFactory: self)
+        )
+    }
 }

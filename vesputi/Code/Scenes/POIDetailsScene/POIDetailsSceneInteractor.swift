@@ -18,6 +18,7 @@ class POIDetailsSceneInteractor: Interactor<POIDetailsScenePresenterProtocol, PO
     }
 
     override func activate() {
+        presenter.present(poi: poi)
     }
 }
 
