@@ -10,7 +10,7 @@ import UIKit
 
 class MapSceneView: UIView {
     let mapView: MGLMapView = {
-        $0.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
+        $0.setCenter(CLLocationCoordinate2D(latitude: 51.340199, longitude: 12.360103), zoomLevel: 9, animated: false)
         return $0
     }(MGLMapView(frame: UIScreen.main.bounds, styleURL: URL(string: "mapbox://styles/mapbox/streets-v11")))
 

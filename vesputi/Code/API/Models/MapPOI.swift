@@ -32,7 +32,7 @@ extension MapPOI: Decodable {
         guard pos.count == 2 else {
             throw DecodingError.dataCorruptedError(forKey: .position, in: container, debugDescription: "Expect 2 coordinates for POI in 'position' key")
         }
-        self.position = CLLocationCoordinate2D(latitude: pos[0], longitude: pos[1])
+        self.position = CLLocationCoordinate2D(latitude: pos[1], longitude: pos[0])
         self.type = try container.decode(String.self, forKey: .type)
     }
 }

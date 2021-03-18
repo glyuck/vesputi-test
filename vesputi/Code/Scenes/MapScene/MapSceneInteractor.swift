@@ -33,6 +33,7 @@ private extension MapSceneInteractor {
                 }
             } receiveValue: { [weak self] pois in
                 self?.pois = pois
+                self?.presenter.present(pois: pois)
             }
     }
 }

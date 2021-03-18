@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Mapbox
 
 protocol MapScenePresenterProtocol {
+    func present(pois: [MapPOI])
 }
 
 class MapScenePresenter: AssemblablePresenterProtocol {
@@ -15,4 +17,11 @@ class MapScenePresenter: AssemblablePresenterProtocol {
 }
 
 extension MapScenePresenter: MapScenePresenterProtocol {
+    func present(pois: [MapPOI]) {
+        viewController.display(annotations: pois.map {
+            let annotation = MGLPointAnnotation()
+            annotation.coordinate = $0.position
+            return annotation
+        })
+    }
 }
