@@ -44,6 +44,7 @@ extension MapSceneInteractor: MapSceneInteractorProtocol {
         guard let poi = pois?[safe: index] else {
             return
         }
-        router.openPOIDetailsScene(poi: poi)
+        let scene = router.getPOIDetailsScene(poi: poi)
+        presenter.present(poiDetailsScene: scene)
     }
 }

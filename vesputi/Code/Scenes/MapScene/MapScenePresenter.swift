@@ -10,6 +10,7 @@ import Mapbox
 
 protocol MapScenePresenterProtocol {
     func present(pois: [MapPOI])
+    func present(poiDetailsScene: UIViewController)
 }
 
 class MapScenePresenter: AssemblablePresenterProtocol {
@@ -23,5 +24,9 @@ extension MapScenePresenter: MapScenePresenterProtocol {
             annotation.coordinate = $0.position
             return annotation
         })
+    }
+
+    func present(poiDetailsScene: UIViewController) {
+        viewController.display(poiDetailsScene: poiDetailsScene)
     }
 }

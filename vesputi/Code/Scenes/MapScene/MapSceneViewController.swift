@@ -10,6 +10,7 @@ import UIKit
 
 protocol MapSceneViewControllerProtocol: AnyObject {
     func display(annotations: [MGLAnnotation])
+    func display(poiDetailsScene: UIViewController)
 }
 
 class MapSceneViewController: VIPViewController<MapSceneInteractorProtocol> {
@@ -42,5 +43,16 @@ extension MapSceneViewController: MGLMapViewDelegate {
             return
         }
         interactor.actionSelectPOI(index: index)
+    }
+
+    func display(poiDetailsScene: UIViewController) {
+        embedViewController(poiDetailsScene, container: v.poiDetailsContainer)
+        UIView.transition(
+            with: v.poiDetailsContainer,
+            duration: Constants.UI.animatinoDuration,
+            options: [.curveEaseInOut, .beginFromCurrentState, .transitionCrossDissolve],
+            animations: nil,
+            completion: nil
+        )
     }
 }
