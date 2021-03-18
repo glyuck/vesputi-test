@@ -33,10 +33,10 @@ extension POIDetailsSceneViewController: POIDetailsSceneViewControllerProtocol {
     func display(viewModel: ViewModel) {
         v.titleLabel.text = viewModel.title
         v.subtitleLabel.text = viewModel.subtitle
-        v.descriptionLabel.text = viewModel.description
+        v.descriptionLabel.setHTMLText(viewModel.description ?? "")
 
         v.titleLabel.isHidden = v.titleLabel.text?.isEmpty != false
         v.subtitleLabel.isHidden = v.subtitleLabel.text?.isEmpty != false
-        v.descriptionLabel.isHidden = v.descriptionLabel.text?.isEmpty != false
+        v.descriptionLabel.isHidden = v.descriptionLabel.attributedText?.string.isEmpty != false
     }
 }

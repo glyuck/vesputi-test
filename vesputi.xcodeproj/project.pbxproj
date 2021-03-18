@@ -37,6 +37,7 @@
 		39A1AEE8260326AB00B5B3BB /* POIDetailsSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */; };
 		39A1AEF426032DBD00B5B3BB /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEF326032DBD00B5B3BB /* Collection+Extensions.swift */; };
 		39A1AEF82603358200B5B3BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEF72603358200B5B3BB /* Constants.swift */; };
+		39A1AEFC260336BB00B5B3BB /* UILabel+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1AEFB260336BB00B5B3BB /* UILabel+HTML.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		39A1AEE3260326AB00B5B3BB /* POIDetailsSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailsSceneView.swift; sourceTree = "<group>"; };
 		39A1AEF326032DBD00B5B3BB /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		39A1AEF72603358200B5B3BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		39A1AEFB260336BB00B5B3BB /* UILabel+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+HTML.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				39A1AEF326032DBD00B5B3BB /* Collection+Extensions.swift */,
+				39A1AEFB260336BB00B5B3BB /* UILabel+HTML.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				39A1AE9B260230C000B5B3BB /* VIPBase.swift in Sources */,
 				39A1AEE5260326AB00B5B3BB /* POIDetailsSceneRouter.swift in Sources */,
 				39A1AE4A2601F2C400B5B3BB /* SceneDelegate.swift in Sources */,
+				39A1AEFC260336BB00B5B3BB /* UILabel+HTML.swift in Sources */,
 				39A1AEAC2602326200B5B3BB /* MapSceneRouter.swift in Sources */,
 				39A1AEE4260326AB00B5B3BB /* POIDetailsScenePresenter.swift in Sources */,
 				39A1AEC526023A7700B5B3BB /* API.swift in Sources */,
