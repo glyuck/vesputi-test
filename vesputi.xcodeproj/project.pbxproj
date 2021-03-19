@@ -338,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39A1AE6E2601F2C600B5B3BB /* Build configuration list for PBXNativeTarget "vesputi" */;
 			buildPhases = (
+				39A1AF1A2603ACEE00B5B3BB /* SwiftLint */,
 				39A1AE402601F2C400B5B3BB /* Sources */,
 				39A1AE412601F2C400B5B3BB /* Frameworks */,
 				39A1AE422601F2C400B5B3BB /* Resources */,
@@ -455,6 +456,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39A1AF1A2603ACEE00B5B3BB /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which mint >/dev/null; then\n  # We need to add `xcrun --sdk macosx` here because of this issue: https://github.com/yonaskolb/Mint/issues/179\n  xcrun --sdk macosx mint run swiftlint\nelse\n  echo \"warning: Mint package manager not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39A1AE402601F2C400B5B3BB /* Sources */ = {
