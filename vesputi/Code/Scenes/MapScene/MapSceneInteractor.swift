@@ -28,6 +28,9 @@ private extension MapSceneInteractor {
     func loadData() {
         _ = api
             .getFeatures()
+            .map {
+                $0.filter { $0.type == "SimplePoi" }
+            }
             .sink { completion in
                 if case let .failure(error) = completion {
                     print("Failed to load data: \(error)")
